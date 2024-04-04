@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <div className='app'>
-      <h1 style={{ textAlign: 'center', fontFamily:'monospace', fontWeight:'bolder', paddingTop:'50px', }}>DATABASE CARDS</h1>
+      <h1 style={{ textAlign: 'center', fontFamily:'monospace', fontWeight:'bolder', paddingTop:'50px', paddingBottom:'30px', marginLeft:'130px', marginRight:'130px', marginTop:'50px',border:'3px solid #dbdac5', borderRadius:'15px'}}>DATABASE CARDS</h1>
       <div className="container" style={{ paddingTop: '50px' }}>
         {data.slice(0, 6).map((d, i) => (
           <div className="row" key={i}>
