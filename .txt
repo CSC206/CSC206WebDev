@@ -1,0 +1,63 @@
+     {data.map((d, i) => ( 
+    
+    <div className="row" key={i}>
+      <div className="col-md-4 col-sm-6">
+        <div className="card" style={{border:'2px solid black'}}>
+          <div className="card-body">
+            <h5 className="card-title">Time</h5>
+            <p className="card-text">Some content for Card 1.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-4 col-sm-6">
+        <div className="card" style={{border:'2px solid black'}}>
+          <div className="card-body">
+            <h5 className="card-title">Temprature</h5>
+            <p className="card-text">Some content for Card 2.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-4 col-sm-6">
+        <div className="card" style={{border:'2px solid black'}}>
+          <div className="card-body">
+            <h5 className="card-title">Ralative Humidity</h5>
+            <p className="card-text">Some content for Card 3.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-4 col-sm-6">
+        <div className="card" style={{border:'2px solid black'}}>
+          <div className="card-body">
+            <h5 className="card-title">Pressure</h5>
+            <p className="card-text">Some content for Card 4.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-4 col-sm-6">
+        <div className="card" style={{border:'2px solid black'}}>
+          <div className="card-body">
+            <h5 className="card-title">Altitude</h5>
+            <p className="card-text">Some content for Card 5.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-md-4 col-sm-6">
+        <div className="card" style={{border:'2px solid black'}}>
+          <div className="card-body">
+            <h5 className="card-title">Oxygen Level</h5>
+            <p className="card-text">{d.oxygenlevel}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+     ))}
+    {data.map((d, i) => (
+            <tr key={i}>
+              <td>{d.time}</td>
+              <td>{d.temprature}</td>
+              <td>{d.relativehumidity}</td>
+              <td>{d.pressure}</td>
+              <td>{d.altitude}</td>
+              <td>{d.oxygenlevel}</td>
+            </tr>
+          ))}
