@@ -16,13 +16,13 @@ const db = mysql.createConnection({
 app.get('/', (re, res)=> {
     return res.json("From Backend");
 })
-app.get('/csc206', (req,res)=> {
-    const sql = 'SELECT * FROM csc206';
-    db.query(sql, (err, data)=>{
-        if(err) return res.json(err);
+app.get('/csc206', (req, res) => {
+    const sql = 'SELECT * FROM csc206 ORDER BY temprature DESC LIMIT 6';
+    db.query(sql, (err, data) => {
+        if (err) return res.json(err);
         return res.json(data);
-    })
-})
+    });
+});
 
 
 
