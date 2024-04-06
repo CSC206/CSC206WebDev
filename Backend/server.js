@@ -17,7 +17,7 @@ app.get('/', (re, res)=> {
     return res.json("From Backend");
 })
 app.get('/csc206', (req, res) => {
-    const sql = 'SELECT * FROM csc206 ORDER BY temprature DESC LIMIT 6';
+    const sql = 'SELECT * FROM csc206 ORDER BY temprature DESC LIMIT 10000000000';
     db.query(sql, (err, data) => {
         if (err) return res.json(err);
         return res.json(data);

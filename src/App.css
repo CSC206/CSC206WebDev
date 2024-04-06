@@ -1,6 +1,10 @@
-body{
-  overflow: hidden;
+/* Apply overflow: hidden; for laptop and desktop screens */
+@media only screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
 }
+
 h1 {
   text-align: center;
   font-size: 50px;
