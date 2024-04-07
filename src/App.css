@@ -1,23 +1,52 @@
-/* Apply overflow: hidden; for laptop and desktop screens */
-@media only screen and (min-width: 1024px) {
-  body {
-    overflow: hidden;
-  }
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  padding-top: 50px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 2.5rem; /* Adjust font size for better readability */
   font-family: cursive;
-  font-style: unset;
-}
-.card {
-  margin-top: 50px;
+  font-weight: bold; /* Ensure consistency */
+  margin-top: 2rem; /* Add space above the heading */
 }
 
-.card-test p {
-  margin-top: 50px;
+.card {
+  margin-top: 2rem; /* Add consistent spacing between cards */
+  border: 2px solid #000; /* Add border to all cards */
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #fff; /* Set background color for better readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smoother effects */
 }
+
+.card:hover {
+  transform: translateY(-5px); /* Add slight upward lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+.card-body {
+  padding: 1.5rem; /* Add consistent padding inside cards */
+}
+
 h5 {
-  text-transform: capitalize;
+  text-align: center;
+  text-transform: capitalize; /* Capitalize all words in headings */
+  font-weight: bold; /* Ensure consistency */
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1.5rem; /* Adjust font size for better readability */
+  font-weight: bold; /* Ensure consistency */
+  margin-top: 1rem; /* Add space between heading and text */
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
 }

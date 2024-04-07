@@ -47,7 +47,7 @@ const App = () => {
                 <div className="card-body" style={{backgroundColor:'#f2fff4'}}>
                   <h5 className="card-title" style={{textAlign:'center', fontWeight:'bolder'}}>TEMPRATURE</h5>
                   <hr />
-                  <p className="card-text"  style={{textAlign:'center', paddingTop:'50px', fontWeight:'bolder', fontSize:'20px'}}>{d.temprature}</p>
+                  <p className="card-text"  style={{textAlign:'center', paddingTop:'50px', fontWeight:'bolder', fontSize:'20px'}}>{d.temprature}°C</p>
                 </div>
               </div>
             </div>
